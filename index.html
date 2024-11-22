@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-        <style>
-            .parent{
-                height:800px;
-                width: 100%;
-                background-color: rgb(184, 183, 178);
+<head>
+    <title>Page Title</title>
+    <style>
+        .parent{
+                height:900px;
+                width: 1200px;
+                background-color: rgb(240, 251, 250);
+                background-color:;
                 border-radius:20px;
                 padding:10px;
                 border:1px solid black;
-            }
+                margin-left: 100px;
+        }
             
             
-            .header{
-                height:100px;
-                width:100%;
-                background-color:  rgba(248, 229, 177, 0.952);;
-                color:black;
-                margin-top:20px;
-                border:1px solid black;
-            }
-            .text-header{
-                color:orange;
-            }
+        .header{
+            height:100px;
+            width:100%;
+            background-color:  rgba(248, 229, 177, 0.952);;
+            color:black;
+            margin-top:20px;
+            border:1px solid black;
+        }
+        .text-header{
+            color:orange;
+        }
             
-            .content{
-                height:300px;
-                width: 200px;
-                background-color: rgba(248, 229, 177, 0.952);
-                border-radius:20px;
-                padding:20px;
-                margin-top:40px;
-                margin-left:30px;
-                border:1px solid black;
+        .content{
+            height:400px;
+            width:300px;
+            background-color: rgba(248, 229, 177, 0.952);
+            border-radius:20px;
+            padding:20px;
+            margin-top:40px;
+            margin-left:500px;
+            border:1px solid black;
                 
             }
-            .image img{
-                width:190px;
-                height:150px;
+        .image img{
+            width:300px;
+            height:200px;
+        }
+        .content-text1{
+            width:190px;
+            height:100px;
+            margin-left:50px;
+            margin-top:50px;
+        }
+        .addres{
+            height:40px;
+            width: 500px;
+            background-color:  rgb(240, 251, 250);
+            display: flex;
+            margin-top:80px;
+            margin-left:470px;
+            color: rgb(96, 19, 204);
             }
-            .content-text1{
-                width:190px;
-                height:100px;
-            }
-            .content-text2{
-                height:40px;
-                width: 500px;
-                background-color: rgb(184, 183, 178);
-                align-items: end;
+        .content-text2{
+            height:40px;
+            width: 500px;
+            background-color:  rgb(240, 251, 250);
+            align-items: end;
                 display: flex;
-                margin-top:40px;
-                margin-left:30px;
+                margin-top:70px;
+                margin-left:510px;
+                color: rgb(34, 28, 19);
+               
             }
             .logo img{
                 width:100px;
                 height:100px;
+                margin-left: -350px;
+            }
+            .button{
+
+                padding: 10px;
+                background-color: rgba(248, 229, 177, 0.952);
+                color:brown;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                margin:10px;
+                margin-left:540px;
+                border:1px solid black;
+                
+            }
+            .wrapcontent{
+                display: flex;
+                justify-content: center;
                 margin-left: -450px;
+            }
+            .text{
+                margin-left: 56px;
+                margin-top: 20px;
+                color: rgb(67, 20, 3);
             }
             </style>
     </head>
@@ -65,17 +103,24 @@
             <div class="header"  style="display: flex; justify-content: center;">
                 <div class="head"></div>
                 <div class="logo"><img src="logo.jpeg" alt=""></div>
-                <div class="text-header"><h1><center>~RICE BOWL CHICKEN KATSU~</center></h1></div>
+                <div class="text-header"><h1><center>RICE BOWL CHICKEN KATSU</center></h1></div>
             </div> 
-            <div class="content">
-                <div class="image">
-                    <img src="katsu.jpeg">
+            <div class="wrapcontent">
+                <div class="content">
+                    <div class="image">
+                        <img src="katsu.jpeg">
+                    </div>
+                    <div class="content-text1"><center>RICE BOWL CHICKEN KATSU</center></div> 
+                    <div class="price"><center><p>Rp.12.000</p></center></div>
                 </div>
-                <div class="content-text1"><center>RICE BOWL CHICKEN KATSU</center></div> 
-                <div class="price"><center><p>Rp.12.000</p></center></div>
+                <div class="text">
+                    <h2><center>"GURIHNYA KATSU,MANTAP DISETIAP GIGITAN"</center></h2>
+                </div>
+                
             </div> 
-            <div class="content-text2">JIKA BERMINAT KLIK SEKARANG!!!</div>
-            <button onclick="addToCart('ritsu')"><a href="https://wa.me/629620052527">WHATSAPP</a></button>
+            <div class="addres">📍Cikampek,karawang,indonesia</div>
+            <div class="content-text2">PESAN SEKARANG</div>
+            <button class="button"="addToCart('ritsu')"><a href="https://wa.me/629620052527">whatsapp</a></button>
        </div> 
     </body>
 </html
